@@ -1,0 +1,120 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--cream);
+  margin: 20px 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  width: 375px;
+
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+.card_image {
+  width: 375px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.image {
+  position: relative;
+  width: 375px;
+  bottom: 130px;
+}
+
+.card_content {
+  border-radius: 0 0 10px 10px;
+  padding: 30px;
+}
+
+.title_type {
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--Dark-grayish-blue);
+}
+
+.title_name {
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.7;
+  letter-spacing: 1.1px;
+}
+
+.price_container {
+  margin: 20px 0 20px 0;
+}
+
+.price {
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+}
+
+.price_old {
+  text-decoration-line: line-through;
+  font-size: small;
+  margin-left: 20px;
+}
+
+.buttom {
+  display: flex;
+  justify-content: center;
+width: 100%;
+  background-color: var(--dark-cyan);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--cream);
+  font-size: medium;
+}
+
+.cart{
+  padding-right: 20px;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 100%;
+    width: 600px;
+    height: 500px;
+    display: flex;
+  }
+  .card_content {
+    width: 300px;
+  }
+  .card_image {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border-radius:  10px 0 0 10px;
+  }
+  .image {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    bottom: 0px;
+    border-radius: 10px 0 0 10px;
+
+}
